@@ -22,6 +22,8 @@ export namespace Components {
     }
     interface TwBasicComponent {
     }
+    interface TwTransitionCards {
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -36,9 +38,16 @@ declare global {
         prototype: HTMLTwBasicComponentElement;
         new (): HTMLTwBasicComponentElement;
     };
+    interface HTMLTwTransitionCardsElement extends Components.TwTransitionCards, HTMLStencilElement {
+    }
+    var HTMLTwTransitionCardsElement: {
+        prototype: HTMLTwTransitionCardsElement;
+        new (): HTMLTwTransitionCardsElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "tw-basic-component": HTMLTwBasicComponentElement;
+        "tw-transition-cards": HTMLTwTransitionCardsElement;
     }
 }
 declare namespace LocalJSX {
@@ -58,9 +67,12 @@ declare namespace LocalJSX {
     }
     interface TwBasicComponent {
     }
+    interface TwTransitionCards {
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
         "tw-basic-component": TwBasicComponent;
+        "tw-transition-cards": TwTransitionCards;
     }
 }
 export { LocalJSX as JSX };
@@ -69,6 +81,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "tw-basic-component": LocalJSX.TwBasicComponent & JSXBase.HTMLAttributes<HTMLTwBasicComponentElement>;
+            "tw-transition-cards": LocalJSX.TwTransitionCards & JSXBase.HTMLAttributes<HTMLTwTransitionCardsElement>;
         }
     }
 }

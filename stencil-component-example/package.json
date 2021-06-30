@@ -22,11 +22,11 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.6.0"
   },
   "license": "MIT",
   "devDependencies": {
     "@stencil/sass": "^1.4.1",
-    "stencil-tailwind-plugin": "^0.1.0"
+    "stencil-tailwind-plugin": "^0.2.1"
   }
 }

@@ -1,0 +1,7 @@
+:host {
+  display: block;
+}
+
+.card__container {
+  @apply container px-5 py-24 mx-auto;
+}

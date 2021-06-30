@@ -131,3 +131,9 @@ npm start
 
 If everything went according to plan, the output should be similar to:
 ![example-output](stencil-component-example/images/example-output.png)
+
+9. Bonus
+
+The example app also contains a functional component `Card` that can be seen to use imported components with tailwind transitions. This example was taken from [codepen](https://codepen.io/muratbenli/pen/jOWJaZy).
+
+![example-output-cards](stencil-component-example/images/example-output-cards.png)
