@@ -27,6 +27,6 @@
   "license": "MIT",
   "devDependencies": {
     "@stencil/sass": "^1.4.1",
-    "stencil-tailwind-plugin": "^0.2.1"
+    "stencil-tailwind-plugin": "^0.2.2"
   }
 }
