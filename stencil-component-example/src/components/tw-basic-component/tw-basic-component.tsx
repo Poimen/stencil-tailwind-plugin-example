@@ -19,7 +19,7 @@ export class TwBasicComponent {
               fuga eum illo dolore odit, enim exercitationem quos ipsa numquam,
               ratione eveniet magni debitis illum molestias amet velit maxime
             </p>
-            <button class="p-2 mt-4 bg-[#eee] rounded-md">Button</button>
+            <button class="p-2 mt-4 bg-[#378805] rounded-md">Button</button>
           </div>
         </div>
       </Host>
