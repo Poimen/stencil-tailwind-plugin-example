@@ -24,4 +24,4 @@ npm run build
 
 As an example of what to expect
 
-![example-output-cards](stencil-component-example/images/example-output-cards.png)
+![example-output-cards](stencil-component-example/images/example-output.png)
