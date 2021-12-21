@@ -6,82 +6,101 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface DemoCard {
+        "cardTitle": string;
+        "subtitle": string;
     }
-    interface TwBasicComponent {
+    interface DemoSection {
     }
-    interface TwTransitionCards {
+    interface FooterNav {
+    }
+    interface HeroSection {
+    }
+    interface MainApp {
+    }
+    interface TopNavBar {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLDemoCardElement extends Components.DemoCard, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLDemoCardElement: {
+        prototype: HTMLDemoCardElement;
+        new (): HTMLDemoCardElement;
     };
-    interface HTMLTwBasicComponentElement extends Components.TwBasicComponent, HTMLStencilElement {
+    interface HTMLDemoSectionElement extends Components.DemoSection, HTMLStencilElement {
     }
-    var HTMLTwBasicComponentElement: {
-        prototype: HTMLTwBasicComponentElement;
-        new (): HTMLTwBasicComponentElement;
+    var HTMLDemoSectionElement: {
+        prototype: HTMLDemoSectionElement;
+        new (): HTMLDemoSectionElement;
     };
-    interface HTMLTwTransitionCardsElement extends Components.TwTransitionCards, HTMLStencilElement {
+    interface HTMLFooterNavElement extends Components.FooterNav, HTMLStencilElement {
     }
-    var HTMLTwTransitionCardsElement: {
-        prototype: HTMLTwTransitionCardsElement;
-        new (): HTMLTwTransitionCardsElement;
+    var HTMLFooterNavElement: {
+        prototype: HTMLFooterNavElement;
+        new (): HTMLFooterNavElement;
+    };
+    interface HTMLHeroSectionElement extends Components.HeroSection, HTMLStencilElement {
+    }
+    var HTMLHeroSectionElement: {
+        prototype: HTMLHeroSectionElement;
+        new (): HTMLHeroSectionElement;
+    };
+    interface HTMLMainAppElement extends Components.MainApp, HTMLStencilElement {
+    }
+    var HTMLMainAppElement: {
+        prototype: HTMLMainAppElement;
+        new (): HTMLMainAppElement;
+    };
+    interface HTMLTopNavBarElement extends Components.TopNavBar, HTMLStencilElement {
+    }
+    var HTMLTopNavBarElement: {
+        prototype: HTMLTopNavBarElement;
+        new (): HTMLTopNavBarElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
-        "tw-basic-component": HTMLTwBasicComponentElement;
-        "tw-transition-cards": HTMLTwTransitionCardsElement;
+        "demo-card": HTMLDemoCardElement;
+        "demo-section": HTMLDemoSectionElement;
+        "footer-nav": HTMLFooterNavElement;
+        "hero-section": HTMLHeroSectionElement;
+        "main-app": HTMLMainAppElement;
+        "top-nav-bar": HTMLTopNavBarElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface DemoCard {
+        "cardTitle"?: string;
+        "subtitle"?: string;
     }
-    interface TwBasicComponent {
+    interface DemoSection {
     }
-    interface TwTransitionCards {
+    interface FooterNav {
+    }
+    interface HeroSection {
+    }
+    interface MainApp {
+    }
+    interface TopNavBar {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
-        "tw-basic-component": TwBasicComponent;
-        "tw-transition-cards": TwTransitionCards;
+        "demo-card": DemoCard;
+        "demo-section": DemoSection;
+        "footer-nav": FooterNav;
+        "hero-section": HeroSection;
+        "main-app": MainApp;
+        "top-nav-bar": TopNavBar;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "tw-basic-component": LocalJSX.TwBasicComponent & JSXBase.HTMLAttributes<HTMLTwBasicComponentElement>;
-            "tw-transition-cards": LocalJSX.TwTransitionCards & JSXBase.HTMLAttributes<HTMLTwTransitionCardsElement>;
+            "demo-card": LocalJSX.DemoCard & JSXBase.HTMLAttributes<HTMLDemoCardElement>;
+            "demo-section": LocalJSX.DemoSection & JSXBase.HTMLAttributes<HTMLDemoSectionElement>;
+            "footer-nav": LocalJSX.FooterNav & JSXBase.HTMLAttributes<HTMLFooterNavElement>;
+            "hero-section": LocalJSX.HeroSection & JSXBase.HTMLAttributes<HTMLHeroSectionElement>;
+            "main-app": LocalJSX.MainApp & JSXBase.HTMLAttributes<HTMLMainAppElement>;
+            "top-nav-bar": LocalJSX.TopNavBar & JSXBase.HTMLAttributes<HTMLTopNavBarElement>;
         }
     }
 }
