@@ -1,6 +1,6 @@
 dist/
 loader/
-
+www/
 *~
 *.sw[mnpcod]
 *.log
