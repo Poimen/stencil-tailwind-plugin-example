@@ -59,7 +59,7 @@ export class TopNavBar {
           <div class={{
             'flex items-center justify-between w-full p-2 h-hero': true,
             'text-slate-100': !isScrolled,
-            'text-slate-800': !isScrolled
+            'text-slate-800': isScrolled
           }}>
             <div class="flex items-center p-4">
               <span class="text-4xl font-title">Example<span class="font-extrabold text-purple-900">UI</span></span>
