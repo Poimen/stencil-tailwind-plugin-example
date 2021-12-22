@@ -10,7 +10,7 @@ export class HeroSection {
   render() {
     return (
       <Host>
-        <div class="grid min-h-screen overflow-hidden pt-hero bg-gradient-to-br from-fuchsia-500 to-indigo-500 place-items-center">
+        <div class="grid min-h-screen overflow-hidden pt-hero bg-gradient-to-br from-green-500 to-indigo-500 place-items-center">
           <div class="flex flex-col justify-between w-full max-w-6xl gap-4 p-4 mt-10 mb-48 item text-slate-100">
             <h1 class="flex flex-col gap-2 py-4 mb-2 font-extrabold text-center">
               <span class="mb-2 text-5xl lg:text-7xl">stencil-tailwind-plugin</span>

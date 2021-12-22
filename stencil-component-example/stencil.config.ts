@@ -1,6 +1,6 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
-import tailwind from 'stencil-tailwind-plugin';
+import tailwind, { tailwindHMR } from 'stencil-tailwind-plugin';
 import tailwindcss from 'tailwindcss';
 import { defaultExtractor } from 'tailwindcss/lib/lib/defaultExtractor';
 import tailwindConf from './tailwind.config';
@@ -47,9 +47,7 @@ export const config: Config = {
           autoprefixer(),
         ]
       }
-    })
-  ],
-  devServer: {
-    reloadStrategy: 'pageReload'
-  }
+    }),
+    tailwindHMR(),
+  ]
 };
