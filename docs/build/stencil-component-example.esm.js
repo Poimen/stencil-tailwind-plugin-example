@@ -1,1 +1,0 @@
-import{p as e,b as o}from"./p-12f5d8c2.js";(()=>{const o=import.meta.url,t={};return""!==o&&(t.resourcesUrl=new URL(".",o).href),e(t)})().then((e=>o([["p-50ec17c0",[[1,"main-app"],[1,"demo-section"],[1,"footer-nav"],[1,"hero-section"],[1,"top-nav-bar",{isScrolled:[32]}],[1,"demo-card",{cardTitle:[1,"card-title"],subtitle:[1]}]]]],e)));
