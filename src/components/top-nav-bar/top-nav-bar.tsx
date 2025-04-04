@@ -5,7 +5,7 @@ const IconLink: FunctionalComponent<{ to: string }> = ({ to }, children) => {
   return (
     <Link
       to={to}
-      class="flex items-center gap-2 p-2 bg-transparent hover:bg-neutral-50 hover:bg-opacity-10"
+      class="flex items-center gap-2 p-2 bg-transparent hover:bg-neutral-50/10"
     >
       {children}
     </Link>
