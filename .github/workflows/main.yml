@@ -21,14 +21,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v3
-
+        uses: actions/checkout@v4
       - name: Setup
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: "16.x"
-      - run: npm install
-      - run: npm run build
+          node-version: "22.x"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - run: pnpm i
+      - run: pnpm build
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3
