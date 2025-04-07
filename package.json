@@ -22,25 +22,16 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^4.7.0",
-    "dist": "link:../stencil-tailwind-plugin/dist"
+    "@stencil/core": "^4.29.1"
   },
   "license": "MIT",
   "devDependencies": {
-    "@stencil-community/postcss": "^2.2.0",
     "@stencil/sass": "^3.2.1",
-    "@tailwindcss/cli": "^4.1.1",
+    "@tailwindcss/cli": "^4.1.3",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/postcss": "^4.1.2",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^7.0.6",
-    "stencil-tailwind-plugin": "^1.8.0",
-    "tailwindcss": "^4.1.1",
-    "typescript": "^5.8.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "stencil-tailwind-plugin": "link:../stencil-tailwind-plugin"
-    }
+    "@tailwindcss/postcss": "^4.1.3",
+    "stencil-tailwind-plugin": "^2.0.3",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.3"
   }
 }
