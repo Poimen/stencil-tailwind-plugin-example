@@ -35,7 +35,7 @@ const propertyToCssVariablePolyfill = (pluginOptions = {}) => {
         const fallbackSelectorsAst = postcss.parse(fallbackSelectors, { from: sourceFile });
 
         let lastImportIndex = -1;
-        for (const node of root.nodes) {
+        for (const [i, node] of root.nodes.entries()) {
           if (node.type === 'atrule' && node.name === 'import') {
             lastImportIndex = i
           }
