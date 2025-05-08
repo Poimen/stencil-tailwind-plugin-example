@@ -1,0 +1,2 @@
+import{p as t,b as o}from"./p-gSCC3jfE.js";export{s as setNonce}from"./p-gSCC3jfE.js";import{g as r}from"./p-DQuL1Twl.js";var a=()=>{const o=import.meta.url;const r={};if(o!==""){r.resourcesUrl=new URL(".",o).href}return t(r)};a().then((async t=>{await r();return o([["p-534c2063",[[1,"main-app"],[1,"demo-section"],[1,"footer-nav"],[1,"hero-section"],[1,"top-nav-bar",{isScrolled:[32]}],[1,"demo-card",{cardTitle:[1,"card-title"],subtitle:[1]}]]]],t)}));
+//# sourceMappingURL=stencil-component-example.esm.js.map
