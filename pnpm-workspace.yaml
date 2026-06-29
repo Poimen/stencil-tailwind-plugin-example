@@ -1,6 +1,6 @@
 allowBuilds:
   '@parcel/watcher': true
-  postcss-combine-duplicated-selectors@https://codeload.github.com/poimen/postcss-combine-duplicated-selectors/tar.gz/bdf9223342b6b1da8a91d6727b6e4cf719f7def7: true
+  postcss-combine-duplicated-selectors@https://codeload.github.com/poimen/postcss-combine-duplicated-selectors/tar.gz/690c03192aa5c61b674ff9e7b8e6016edb56df53: true
 blockExoticSubdeps: false
 minimumReleaseAgeExclude:
   - '@tailwindcss/cli@4.3.2'
