@@ -82,8 +82,14 @@ declare namespace LocalJSX {
     }
     interface TopNavBar {
     }
+
+    interface DemoCardAttributes {
+        "cardTitle": string;
+        "subtitle": string;
+    }
+
     interface IntrinsicElements {
-        "demo-card": DemoCard;
+        "demo-card": Omit<DemoCard, keyof DemoCardAttributes> & { [K in keyof DemoCard & keyof DemoCardAttributes]?: DemoCard[K] } & { [K in keyof DemoCard & keyof DemoCardAttributes as `attr:${K}`]?: DemoCardAttributes[K] } & { [K in keyof DemoCard & keyof DemoCardAttributes as `prop:${K}`]?: DemoCard[K] };
         "demo-section": DemoSection;
         "footer-nav": FooterNav;
         "hero-section": HeroSection;
@@ -95,12 +101,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "demo-card": LocalJSX.DemoCard & JSXBase.HTMLAttributes<HTMLDemoCardElement>;
-            "demo-section": LocalJSX.DemoSection & JSXBase.HTMLAttributes<HTMLDemoSectionElement>;
-            "footer-nav": LocalJSX.FooterNav & JSXBase.HTMLAttributes<HTMLFooterNavElement>;
-            "hero-section": LocalJSX.HeroSection & JSXBase.HTMLAttributes<HTMLHeroSectionElement>;
-            "main-app": LocalJSX.MainApp & JSXBase.HTMLAttributes<HTMLMainAppElement>;
-            "top-nav-bar": LocalJSX.TopNavBar & JSXBase.HTMLAttributes<HTMLTopNavBarElement>;
+            "demo-card": LocalJSX.IntrinsicElements["demo-card"] & JSXBase.HTMLAttributes<HTMLDemoCardElement>;
+            "demo-section": LocalJSX.IntrinsicElements["demo-section"] & JSXBase.HTMLAttributes<HTMLDemoSectionElement>;
+            "footer-nav": LocalJSX.IntrinsicElements["footer-nav"] & JSXBase.HTMLAttributes<HTMLFooterNavElement>;
+            "hero-section": LocalJSX.IntrinsicElements["hero-section"] & JSXBase.HTMLAttributes<HTMLHeroSectionElement>;
+            "main-app": LocalJSX.IntrinsicElements["main-app"] & JSXBase.HTMLAttributes<HTMLMainAppElement>;
+            "top-nav-bar": LocalJSX.IntrinsicElements["top-nav-bar"] & JSXBase.HTMLAttributes<HTMLTopNavBarElement>;
         }
     }
 }

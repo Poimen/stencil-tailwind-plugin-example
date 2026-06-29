@@ -20,3 +20,4 @@ minimumReleaseAgeExclude:
   - '@tailwindcss/oxide@4.3.2'
   - '@tailwindcss/postcss@4.3.2'
   - tailwindcss@4.3.2
+  - stencil-tailwind-plugin@2.0.6
